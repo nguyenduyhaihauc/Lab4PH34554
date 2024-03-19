@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- uploa image -->
+    <!-- action thể hiện một đường dẫn sang File khác -->
+    <!-- method post là  form sẽ gửi dữ liệu lên server -->
+    <form action="/uploadfile"
+    method="post" enctype="multipart/form-data">  
+        <h1>Lab 4 - PH34554</h1>
+        <input type="file" name="myfile"> 
+        <input type="submit" value="Uplaod a file">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+     <!-- MULTIPLE FILES -->
+    <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+        Chon file: <input type="file" name="myFiles" multiple>
+        <input type="submit" value="Upload your files" />
+    </form>
+</body>
+</html>
